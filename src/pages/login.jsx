@@ -9,10 +9,12 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login Page</h1>
-      <button onClick={navigateToUserHome}>User</button>
-    </div>
+    <div className="visit-container">
+    <h1 className="heading">Visit Our Page</h1>
+    <button className="visit-button" onClick={navigateToUserHome}>
+      Visit
+    </button>
+  </div>
   );
 };
 

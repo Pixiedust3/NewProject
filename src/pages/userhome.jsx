@@ -5,7 +5,7 @@ const Top = () => {
     <nav className="navbar">
       <ul className="navbar-links">
   
-        <li><a href="#pregnancy">Pregnancy</a></li>
+        <li><a href="#pregnancy ">Pregnancy p</a></li>
         <li><a href="#parenting">Parenting</a></li>
         <li><a href="#about">About Us</a></li>
       </ul>

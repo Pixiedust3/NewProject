@@ -6,7 +6,7 @@ const Top = () => {
       <ul className="navbar-links">
   
         <li><a href="#pregnancy ">Pregnancy p</a></li>
-        <li><a href="#parenting">Parenting</a></li>
+        <li><a href="#parenting">Parenting G</a></li>
         <li><a href="#about">About Us</a></li>
       </ul>
       <div className="navbar-icons">

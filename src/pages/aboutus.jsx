@@ -1,7 +1,8 @@
 import React from "react";
-import "../styles.css"; // Import styles
 
-const AboutUs = () => {
+
+const AboutUs = () => 
+  {
   return (
     <div className="about-section">
       <h2>About Us</h2>

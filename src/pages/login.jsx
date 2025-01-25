@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <div className="visit-container">
-    <h1 className="heading">Visit Our Page</h1>
+    <h1 className="heading">Visit Our Page Pregnify</h1>
     <button className="visit-button" onClick={navigateToUserHome}>
       Visit
     </button>

@@ -14,7 +14,7 @@ function Page() {
     <div className="section-card">
       <h2 className="page-title">Pregnancy</h2>
 
-      <p>Find tips, Books and Resources and Baby Names and many more</p>
+      <p>Find tips, Books and Resources and Baby Names and many more etc</p>
 
       <a href="#pregnancy" className="section-link">Learn More</a>
         </div>      

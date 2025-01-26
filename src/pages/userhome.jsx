@@ -6,8 +6,8 @@ function Page() {
     <div className="page-container">
       <h1 className="page-title">Welcome to Pregnify </h1>
       <p className="page-description">
-        Our site will guide you from basic to high level knoweldge about Pregnancy
-  
+        Our site will guide you from basic to high level knoweldge about Pregnancy  
+etc
         </p>  
         <p1 className="page-description"><b> Your Health is Our Top Priority</b></p1>  
     <div className="page-sections">

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "../cssonly/userhome.css"; // Import the CSS file
 
 const Login = () => {
   const navigate = useNavigate();
@@ -9,12 +10,12 @@ const Login = () => {
   };
 
   return (
-    <div className="visit-container">
-    <h1 className="heading">Visit Our Page Pregnify</h1>
-    <button className="visit-button" onClick={navigateToUserHome}>
-      Visit
-    </button>
-  </div>
+    <>
+      <header></header> 
+      <button className="visit-button" onClick={navigateToUserHome}>
+        User login portal
+      </button>
+    </>
   );
 };
 

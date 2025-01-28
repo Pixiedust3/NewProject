@@ -1,0 +1,48 @@
+/* General body styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fadcdc; /* Light pink background */
+}
+
+/* Dark pink header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%; /* Adjusted height to make it half of the original */
+  background-color: #ff69b4; /* Dark pink */
+  display: flex;
+  align-items: center;
+  padding-left: 20px; /* Add some space on the left */
+}
+
+/* Logo styling */
+header img {
+  height: 50px; /* Adjust the size of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Button styling */
+.visit-button {
+  background-color: #ff69b4; /* Match dark pink header */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for aesthetics */
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Hover effect for button */
+.visit-button:hover {
+  background-color: #ff4682; /* Slightly darker shade for hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

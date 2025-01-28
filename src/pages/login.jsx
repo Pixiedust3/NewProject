@@ -64,13 +64,8 @@ const Login = () => {
     </div>
       );
 
-    <>
-      <header></header> 
-      <button className="visit-button" onClick={navigateToUserHome}>
-        User login portal
-      </button>
-    </>
-  );
+    
+ 
 
 };
 

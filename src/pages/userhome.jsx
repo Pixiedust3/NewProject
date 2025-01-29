@@ -1,24 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import '../cssonly/userhome.css';
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import "../cssonly/userhome.css"; // Import CSS
+
 function Page() {
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
+  const navigateToLogin = () => {
+    navigate("/login"); // Navigate to the login route
+  };
+
   return (
     <div className="page-container">
-      <h1 className="page-title">Welcome to Pregnify </h1>
+      <h1 className="page-title">Welcome to Pregnify</h1>
+      <p className="page-description">Ashreeya</p>
       <p className="page-description">
-        Ashreeya
-
-        </p>  
-        <p1 className="page-description"><b> Your Health is Our Top Priority</b></p1>  
-    <div className="page-sections">
-    <div className="section-card">
-      <h2 className="page-title">Pregnancy</h2>
-
-      <p>Find tips, Books and Resources and Baby Names and many more etc</p>
-
-      <a href="#pregnancy" className="section-link">Learn More</a>
-        </div>      
-      </div>     
+        <b>Your Health is Our Top Priority</b>
+      </p>
+      <div className="page-sections">
+        <div className="section-card">
+          <h2 className="page-title">Pregnancy</h2>
+          <p>Find tips, Books and Resources and Baby Names and many more etc</p>
+          <button className="club-button" onClick={navigateToLogin}>
+            User login page
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -26,7 +32,6 @@ function Page() {
 const Top = () => {
   return (
     <>
-      
       <nav className="navbar">
         <ul className="navbar-links">
           <li><a href="#pregnancy">Pregnancy</a></li>
@@ -34,12 +39,8 @@ const Top = () => {
           <li><a href="#parenting">Parenting</a></li>
           <li><Link to="/about">About Us</Link></li>
         </ul>
-        <div className="navbar-icons">
-          <button className="club-button">Pregnify</button>
-        </div>
+        <div className="navbar-icons"></div>
       </nav>
-
-      
       <Page />
     </>
   );

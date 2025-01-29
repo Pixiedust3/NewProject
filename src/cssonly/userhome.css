@@ -1,4 +1,60 @@
-/* General body styling */
+.page-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: rgb(242, 137, 154);
+  margin-bottom: 20px;
+}
+
+.page-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.page-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.section-card h2 {
+  color: rgb(242, 137, 154);
+  margin-bottom: 10px;
+}
+
+.section-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.section-link {
+  color:  rgb(242, 137, 154);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
 body {
   margin: 0;
   height: 100vh;
@@ -46,3 +102,69 @@ header img {
   background-color: #ff4682; /* Slightly darker shade for hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+body {
+  background-color: #FFE4E1; /* Misty Rose */
+  font-family: 'Arial', sans-serif;
+  color: #4E4E4E; /* Soft dark text */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D81B60; /* Vivid Pink */
+  padding: 10px 20px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #FFF0F5; /* Lavender Blush */
+  font-size: 16px;
+}
+
+/* Button Styling */
+.club-button, .visit-button {
+  background-color: #FF69B4; /* Hot Pink */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.club-button:hover, .visit-button:hover {
+  background-color: #C71585; /* Medium Violet Red */
+  transform: scale(1.05);
+}
+
+/* About Us Section */
+.about-section {
+  background-color: #FFF0F5; /* Lavender Blush */
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  color: #D81B60; /* Vivid Pink */
+}
+

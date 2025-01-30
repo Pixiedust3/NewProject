@@ -1,170 +1,80 @@
+/* src/cssonly/userhome.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
 .page-container {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #fff;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.hero-section {
+  background-color: #ffebcd;
+  padding: 2rem 0;
 }
 
 .page-title {
   font-size: 2.5rem;
-  color: rgb(242, 137, 154);
-  margin-bottom: 20px;
+  color: #333;
 }
 
 .page-description {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 30px;
 }
 
 .page-sections {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+  padding: 3rem 0;
+  background-color: #fff;
 }
 
 .section-card {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  text-align: center;
+  background-color: #e7f7f7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
-.section-card h2 {
-  color: rgb(242, 137, 154);
-  margin-bottom: 10px;
+.section-title {
+  font-size: 2rem;
 }
 
-.section-card p {
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.section-link {
-  color:  rgb(242, 137, 154);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.section-link:hover {
-  text-decoration: underline;
-}
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fadcdc; /* Light pink background */
-}
-
-/* Dark pink header */
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15%; /* Adjusted height to make it half of the original */
-  background-color: #ff69b4; /* Dark pink */
-  display: flex;
-  align-items: center;
-  padding-left: 20px; /* Add some space on the left */
-}
-
-/* Logo styling */
-header img {
-  height: 50px; /* Adjust the size of the logo */
-  width: auto; /* Maintain aspect ratio */
-}
-
-/* Button styling */
-.visit-button {
-  background-color: #ff69b4; /* Match dark pink header */
+.club-button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow for aesthetics */
-  transition: transform 0.2s, background-color 0.2s;
+  margin: 10px;
 }
 
-/* Hover effect for button */
-.visit-button:hover {
-  background-color: #ff4682; /* Slightly darker shade for hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+.club-button:hover {
+  background-color: #45a049;
 }
 
-body {
-  background-color: #FFE4E1; /* Misty Rose */
-  font-family: 'Arial', sans-serif;
-  color: #4E4E4E; /* Soft dark text */
-}
-
-/* Navbar Styling */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #D81B60; /* Vivid Pink */
-  padding: 10px 20px;
+  background-color: #333;
+  padding: 1rem;
 }
 
-/* Navbar Links */
 .navbar-links {
-  display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
 .navbar-links li {
-  margin: 0 15px;
+  display: inline;
+  margin: 0 20px;
 }
 
 .navbar-links a {
-  text-decoration: none;
-  color: #FFF0F5; /* Lavender Blush */
-  font-size: 16px;
-}
-
-/* Button Styling */
-.club-button, .visit-button {
-  background-color: #FF69B4; /* Hot Pink */
   color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
-
-.club-button:hover, .visit-button:hover {
-  background-color: #C71585; /* Medium Violet Red */
-  transform: scale(1.05);
-}
-
-/* About Us Section */
-.about-section {
-  background-color: #FFF0F5; /* Lavender Blush */
-  padding: 20px;
-  margin: 20px auto;
-  width: 80%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2 {
-  color: #D81B60; /* Vivid Pink */
-}
-

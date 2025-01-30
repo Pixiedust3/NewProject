@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Login from "./pages/login";
 import UserHome from "./pages/userhome";
 import AboutUs from "./pages/aboutus";
+import DoctorModule from "./pages/doctorlogin";
 import './App.css';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/userhome" element={<UserHome />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutUs />} />
+        
       </Routes>
     </Router>
   );

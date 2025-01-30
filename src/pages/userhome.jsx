@@ -15,21 +15,27 @@ function Page() {
 
   return (
     <div className="page-container">
-      <h1 className="page-title">Welcome to Pregnify</h1>
+      {/* Hero Section */}
+      <header className="hero-section">
+        <h1 className="page-title">Welcome to Pregnify</h1>
+        <p className="page-description">
+          <b>Your Health is Our Top Priority</b>
+        </p>
+      </header>
 
-      <p className="page-description">
-        <b>Your Health is Our Top Priority</b>
-      </p>
+      {/* Features Section */}
       <div className="page-sections">
         <div className="section-card">
-          <h2 className="page-title">Pregnancy</h2>
-          <p>Find tips, Books and Resources and Baby Names and many more etc</p>
-          <button className="club-button" onClick={navigateToLogin}>
-            User Login Page
-          </button>
-          <button className="club-button" onClick={navigateToDoctorLogin}>
-            Doctor Login Page
-          </button>
+          <h2 className="section-title">Pregnancy</h2>
+          <p>Find tips, books, resources, baby names, and much more!</p>
+          <div className="buttons-container">
+            <button className="club-button" onClick={navigateToLogin}>
+              User Login Page
+            </button>
+            <button className="club-button" onClick={navigateToDoctorLogin}>
+              Doctor Login Page
+            </button>
+          </div>
         </div>
       </div>
     </div>

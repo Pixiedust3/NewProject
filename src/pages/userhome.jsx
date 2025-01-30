@@ -12,7 +12,7 @@ function Page() {
   return (
     <div className="page-container">
       <h1 className="page-title">Welcome to Pregnify</h1>
-      <p className="page-description">Ashreeya</p>
+
       <p className="page-description">
         <b>Your Health is Our Top Priority</b>
       </p>

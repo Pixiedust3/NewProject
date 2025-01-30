@@ -9,6 +9,10 @@ function Page() {
     navigate("/login"); // Navigate to the login route
   };
 
+  const navigateToDoctorLogin = () => {
+    navigate("/doctorlogin"); // Navigate to the doctor login route
+  };
+
   return (
     <div className="page-container">
       <h1 className="page-title">Welcome to Pregnify</h1>
@@ -21,7 +25,10 @@ function Page() {
           <h2 className="page-title">Pregnancy</h2>
           <p>Find tips, Books and Resources and Baby Names and many more etc</p>
           <button className="club-button" onClick={navigateToLogin}>
-            User login page
+            User Login Page
+          </button>
+          <button className="club-button" onClick={navigateToDoctorLogin}>
+            Doctor Login Page
           </button>
         </div>
       </div>

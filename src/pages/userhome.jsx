@@ -50,6 +50,7 @@ const Top = () => {
           <li><a href="#pregnancy">Pregnancy</a></li>
           <li><a href="#baby">Baby</a></li>
           <li><a href="#parenting">Parenting</a></li>
+          <li><Link to="/doctor">Doctor</Link></li>
           <li><Link to="/about">About Us</Link></li>
         </ul>
         <div className="navbar-icons"></div>

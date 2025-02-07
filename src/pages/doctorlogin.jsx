@@ -1,9 +1,11 @@
 import "../cssonly/doctorhome.css";
+
+
 function DoctorModule()
 {
   return(
     <>
-      <div className="card">
+      <div className="cardx">
         Welcome Doctor
       </div>
     </>

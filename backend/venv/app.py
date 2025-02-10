@@ -4,13 +4,13 @@ import pymysql
 import hashlib
 
 app = Flask(__name__)
-CORS(app)  # Allow cross-origin requests from React
+CORS(app)  
 
-# Database connection
+
 db = pymysql.connect(
     host="localhost",
-    user="root",  # Replace with your MySQL username
-    password="",  # Replace with your MySQL password
+    user="root",  
+    password="", 
     database="UserDB"
 )
 
@@ -21,7 +21,7 @@ def login():
     username = data.get("username")
     password = data.get("password")
 
-    # Hash the password to match hashed passwords in the database
+    
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
     cursor = db.cursor()

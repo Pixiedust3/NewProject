@@ -11,18 +11,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault(); 
 
-    if (username === "Uadmin" && password === "Upassword") {
-      setMessage("Login Successful!");
-      setTimeout(() => {
-        setMessage(""); 
-        navigate("/userhome");
-      }, 1500); 
-    } else {
-      setMessage("Invalid Username or Password!");
-      setTimeout(() => setMessage(""), 1500);
-    }
-  };
-
+    
   return (
     <>
       <Head />

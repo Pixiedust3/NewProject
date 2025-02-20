@@ -10,8 +10,13 @@ function Page() {
   };
 
   const navigateToDoctorLogin = () => {
-    navigate("/doctorlogin"); // Navigate to the doctor login route
+    navigate("/doctorlogin");
+
+    
   };
+  function navigateToResources() {
+    navigate("/resources");
+  }
 
   return (
     <div className="page-container">
@@ -35,6 +40,9 @@ function Page() {
             <button className="club-button" onClick={navigateToDoctorLogin}>
               Doctor Login Page
             </button>
+            <button className="club-button" onClick={navigateToResources}>
+              Resources
+            </button>
           </div>
         </div>
       </div>
@@ -52,6 +60,7 @@ const Top = () => {
           <li><a href="#parenting">Parenting</a></li>
           <li><Link to="/doctor">Doctor</Link></li>
           <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
         </ul>
         <div className="navbar-icons"></div>
       </nav>

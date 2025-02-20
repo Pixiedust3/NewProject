@@ -1,0 +1,95 @@
+/* General container styling */
+.about-container {
+    background: linear-gradient(to right, #4A90E2, #89CFF0); /* Gradient background */
+    padding: 40px 20px; /* Adjusted padding for better spacing */
+    color: rgb(13, 51, 223); /* Text color */
+    text-align: center; /* Center-align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header section styling */
+.about-header {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-bottom: 40px; /* Spacing below the header */
+}
+
+/* Individual section styling */
+.about-section {
+    width: 22%; /* Fixed width for each section */
+    text-align: center; /* Center-align content */
+    margin: 10px 0; /* Spacing between sections */
+}
+
+/* Icon styling */
+.icon {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Spacing below the icon */
+    color: rgb(3, 43, 173); /* Icon color */
+}
+
+/* Heading styling */
+h3 {
+    font-size: 18px; /* Heading size */
+    margin-bottom: 10px; /* Spacing below the heading */
+    font-weight: 600; /* Bold heading */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 14px; /* Text size */
+    line-height: 1.6; /* Improved line spacing for readability */
+    margin: 0; /* Remove default margin */
+}
+
+/* Services section styling */
+.about-services {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Spacing between service items */
+}
+
+/* Individual service styling */
+.service {
+    width: 20%; /* Fixed width for each service */
+    text-align: center; /* Center-align content */
+    padding: 15px; /* Padding for better spacing */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+/* Service icon styling */
+.service-icon {
+    font-size: 36px; /* Icon size */
+    margin-bottom: 10px; /* Spacing below the icon */
+    color: rgb(1, 4, 15); /* Icon color */
+}
+
+/* Service heading styling */
+h4 {
+    font-size: 16px; /* Heading size */
+    margin-bottom: 5px; /* Spacing below the heading */
+    font-weight: 600; /* Bold heading */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section, .service {
+        width: 45%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section, .service {
+        width: 100%; /* Full width on very small screens */
+    }
+}

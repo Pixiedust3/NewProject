@@ -1,5 +1,5 @@
 from flask import Flask, send_from_directory
-from extensions import db
+from extension import db
 from model import Userinfo
 
 app = Flask(__name__)

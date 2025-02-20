@@ -1,38 +1,26 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import pymysql
-import hashlib
+from flask import Flask, send_from_directory
+from extensions import db
+from model import Userinfo
 
 app = Flask(__name__)
-CORS(app)  
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Pregnify.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db.init_app(app)
 
 
-db = pymysql.connect(
-    host="localhost",
-    user="root",  
-    password="", 
-    database="UserDB"
-)
+with app.app_context():
+    db.create_all()
 
 
-@app.route("/login", methods=["POST"])
-def login():
-    data = request.json
-    username = data.get("username")
-    password = data.get("password")
-
-    
-    hashed_password = hashlib.sha256(password.encode()).hexdigest()
-
-    cursor = db.cursor()
-    cursor.execute("SELECT * FROM Usertable WHERE username=%s AND password=%s", (username, hashed_password))
-    user = cursor.fetchone()
-
-    if user:
-        return jsonify({"message": "Login successful", "status": "success"})
-    else:
-        return jsonify({"message": "Invalid username or password", "status": "error"})
+@app.route('/')
+def home():
+    return "Welcome to Pregnify!"
 
 
-if __name__ == "__main__":
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory('static', 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+if __name__ == '__main__':
     app.run(debug=True)

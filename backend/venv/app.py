@@ -12,12 +12,12 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
-
+# ✅ Add this route to fix 404 error on homepage
 @app.route('/')
 def home():
     return "Welcome to Pregnify!"
 
-
+# ✅ Handle missing favicon to avoid 404 error in console
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory('static', 'favicon.ico', mimetype='image/vnd.microsoft.icon')

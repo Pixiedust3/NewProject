@@ -6,7 +6,7 @@ function DoctorModule()
   return(
     <>
       <div className="cardx">
-        Welcome Doctor
+        Welcome Doctor !!
       </div>
     </>
   )

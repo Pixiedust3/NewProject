@@ -1,8 +1,11 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import "../cssonly/userhome.css"; // Import CSS
+import Resources from "./resources";
 
-function Page() {
+
+function Page() 
+{
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const navigateToLogin = () => {
@@ -14,9 +17,10 @@ function Page() {
 
     
   };
-  function navigateToResources() {
+  const navigateToRes = () => {
     navigate("/resources");
-  }
+  };
+  
 
   return (
     <div className="page-container">
@@ -40,9 +44,10 @@ function Page() {
             <button className="club-button" onClick={navigateToDoctorLogin}>
               Doctor Login Page
             </button>
-            <button className="club-button" onClick={navigateToResources}>
+            <button className="club-button" onClick={navigateToRes}>
               Resources
             </button>
+            
           </div>
         </div>
       </div>
@@ -53,14 +58,16 @@ function Page() {
 const Top = () => {
   return (
     <>
+    
       <nav className="navbar">
         <ul className="navbar-links">
-          <li><a href="#pregnancy">Pregnancy</a></li>
-          <li><a href="#baby">Baby</a></li>
-          <li><a href="#parenting">Parenting</a></li>
-          <li><Link to="/doctor">Doctor</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/resources">Resources</Link></li>
+        <li><Link to="/pregnancy">Pregnancy</Link></li>
+        <li><Link to="/baby">Baby</Link></li>
+        <li><Link to="/parenting">Parenting</Link></li>
+        <li><Link to="/doctor">Doctor</Link></li>
+        <li><Link to="/about">About Us</Link></li>
+        <li><Link to="/resources">Resources</Link></li>
+
         </ul>
         <div className="navbar-icons"></div>
       </nav>

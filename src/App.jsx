@@ -5,6 +5,7 @@ import UserHome from "./pages/userhome";
 import AboutUs from "./pages/aboutus";
 import DoctorModule from "./pages/doctorlogin";
 import './App.css';
+import Resources from "./pages/resources";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/doctorlogin" element={<DoctorModule />} />
+        <Route path="/resources" element={<Resources />} />
 
         
       </Routes>

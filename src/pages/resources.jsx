@@ -34,7 +34,7 @@ function Resources() {
      </div>
         <ul className="resource-links">
           <li><a href="https://my.clevelandclinic.org/health/articles/9699-first-trimester" target="_blank" rel="noopener noreferrer">Understanding the First Trimester</a></li>
-          <li><a href="https://www.babycenter.com/baby/solids-finger-foods/age-by-age-guide-to-feeding-your-baby_1400680" target="_blank" rel="noopener noreferrer">Healthy Diet Tips for Expecting Moms</a></li>
+          <li><a href="https://www.babycenter.com/baby/solids-finger-foods/age-by-age-guide-to-feeding-your-baby_1400680" target="_blank" rel="noopener noreferrer">Healthy Diet Tips for Expecting Mothers</a></li>
       
         </ul>
       </section>

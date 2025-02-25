@@ -1,26 +1,25 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
-import "../cssonly/userhome.css"; // Import CSS
-import Resources from "./resources";
+import { Link, useNavigate } from "react-router-dom"; 
+import "../cssonly/userhome.css"; 
 
-
-function Page() 
-{
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+function Page() {
+  const navigate = useNavigate();
 
   const navigateToLogin = () => {
-    navigate("/login"); // Navigate to the login route
+    navigate("/login"); 
   };
 
   const navigateToDoctorLogin = () => {
     navigate("/doctorlogin");
-
-    
   };
+
   const navigateToRes = () => {
     navigate("/resources");
   };
-  
+
+  const navigateToRegisterLogin = () => {
+    navigate("/userregister");  // ✅ Route to RegisterLogin page
+  };
 
   return (
     <div className="page-container">
@@ -47,7 +46,9 @@ function Page()
             <button className="club-button" onClick={navigateToRes}>
               Resources
             </button>
-            
+            <button className="club-button" onClick={navigateToRegisterLogin}>
+              Test
+            </button> {/* ✅ Now correctly routes to RegisterLogin */}
           </div>
         </div>
       </div>
@@ -58,16 +59,14 @@ function Page()
 const Top = () => {
   return (
     <>
-    
       <nav className="navbar">
         <ul className="navbar-links">
-        <li><Link to="/pregnancy">Pregnancy</Link></li>
-        <li><Link to="/baby">Baby</Link></li>
-        <li><Link to="/parenting">Parenting</Link></li>
-        <li><Link to="/doctor">Doctor</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/resources">Resources</Link></li>
-
+          <li><Link to="/pregnancy">Pregnancy</Link></li>
+          <li><Link to="/baby">Baby</Link></li>
+          <li><Link to="/parenting">Parenting</Link></li>
+          <li><Link to="/doctor">Doctor</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
         </ul>
         <div className="navbar-icons"></div>
       </nav>

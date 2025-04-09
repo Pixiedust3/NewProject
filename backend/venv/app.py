@@ -18,7 +18,7 @@ with app.app_context():
 
 @app.route('/')
 def home():
-    return "Welcome to Pregnify!"
+    return "Welcome to Pregniy!"
 
 @app.route('/favicon.ico')
 def favicon():

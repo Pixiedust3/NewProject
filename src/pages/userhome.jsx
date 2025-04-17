@@ -1,35 +1,55 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
-import "../cssonly/userhome.css"; // Import CSS
+import { Link, useNavigate } from "react-router-dom"; 
+import "../cssonly/userhome.css"; 
 
 function Page() {
-  const navigate = useNavigate(); // Initialize the useNavigate hook
+  const navigate = useNavigate();
 
   const navigateToLogin = () => {
-    navigate("/login"); // Navigate to the login route
+    navigate("/login"); 
   };
 
   const navigateToDoctorLogin = () => {
-    navigate("/doctorlogin"); // Navigate to the doctor login route
+    navigate("/doctorlogin");
+  };
+
+  const navigateToRes = () => {
+    navigate("/resources");
+  };
+
+  const navigateToRegisterLogin = () => {
+    navigate("/userregister");  // ✅ Route to RegisterLogin page
   };
 
   return (
     <div className="page-container">
-      <h1 className="page-title">Welcome to Pregnify</h1>
+      {/* Hero Section */}
+      <header className="hero-section">
+        <h1 className="page-title">Welcome to Pregnify</h1>
+        <p className="page-description">
+          <b>Your Health is Our Top Priority</b>
+        </p>
+      </header>
 
-      <p className="page-description">
-        <b>Your Health is Our Top Priority</b>
-      </p>
+      {/* Features Section */}
       <div className="page-sections">
         <div className="section-card">
-          <h2 className="page-title">Pregnancy</h2>
-          <p>Find tips, Books and Resources and Baby Names and many more etc</p>
-          <button className="club-button" onClick={navigateToLogin}>
-            User Login Page
-          </button>
-          <button className="club-button" onClick={navigateToDoctorLogin}>
-            Doctor Login Page
-          </button>
+          <h2 className="section-title">Pregnancy</h2>
+          <p>Find tips, books, resources, baby names, and much more!</p>
+          <div className="buttons-container">
+            <button className="club-button" onClick={navigateToLogin}>
+              User Login Page
+            </button>
+            <button className="club-button" onClick={navigateToDoctorLogin}>
+              Doctor Login Page
+            </button>
+            <button className="club-button" onClick={navigateToRes}>
+              Resources
+            </button>
+            <button className="club-button" onClick={navigateToRegisterLogin}>
+              Test
+            </button> {/* ✅ Now correctly routes to RegisterLogin */}
+          </div>
         </div>
       </div>
     </div>
@@ -41,10 +61,12 @@ const Top = () => {
     <>
       <nav className="navbar">
         <ul className="navbar-links">
-          <li><a href="#pregnancy">Pregnancy</a></li>
-          <li><a href="#baby">Baby</a></li>
-          <li><a href="#parenting">Parenting</a></li>
+          <li><Link to="/pregnancy">Pregnancy</Link></li>
+          <li><Link to="/baby">Baby</Link></li>
+          <li><Link to="/parenting">Parenting</Link></li>
+          <li><Link to="/doctor">Doctor</Link></li>
           <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
         </ul>
         <div className="navbar-icons"></div>
       </nav>

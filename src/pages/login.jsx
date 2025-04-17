@@ -1,59 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../cssonly/login.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
 
-  const navigateToUserHome = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault(); 
-    navigate("/userhome");
+
+    if (username === "Uadmin" && password === "Upassword") {
+      setMessage("Login Successful!");
+      setTimeout(() => {
+        setMessage(""); 
+        navigate("/userhome");
+      }, 1500); 
+    } else {
+      setMessage("Invalid Username or Password!");
+      setTimeout(() => setMessage(""), 1500);
+    }
   };
 
   return (
     <>
-    <Head/>
+      <Head />
       <div className="card">
         <div className="card2">
           <form className="form">
             <p id="heading">Login</p>
+            
+            {message && <div className="popup">{message}</div>}
+
             <div className="field">
-              <svg
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                height="16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-                className="input-icon"
-              >
-                <path d="M13.106 7.222c0-2.967-2.249-5.032..." />
-              </svg>
               <input
                 type="text"
                 className="input-field"
                 placeholder="Username"
                 autoComplete="off"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
               />
             </div>
             <div className="field">
-              <svg
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                height="16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-                className="input-icon"
-              >
-                <path d="M8 1a2 2 0 0 1 2 2v4H6V3..." />
-              </svg>
               <input
                 type="password"
                 className="input-field"
                 placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="btn">
-              <button type="button" className="button1" onClick={navigateToUserHome}>
+              <button type="button" className="button1" onClick={handleLogin}>
                 Login
               </button>
               <button type="button" className="button2">Sign Up</button>
@@ -66,13 +66,7 @@ const Login = () => {
   );
 };
 
-function Head()
-{
-  return(
-  <h1 className="headings">Welcome Dear User</h1>
-  )
+function Head() {
+  return <h1 className="headings">Welcome Dear User</h1>;
 }
-
-
-
 export default Login;

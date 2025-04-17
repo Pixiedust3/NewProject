@@ -1,3 +1,4 @@
+#this is create db.py
 from app import app, db
 
 with app.app_context():

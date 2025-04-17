@@ -19,14 +19,14 @@ from flask_cors import CORS
 from flask_migrate import Migrate
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:5174"]}})  # Allow requests from React frontend
+CORS(app, resources={r"/*": {"origins": ["http://localhost:5174"]}}) 
 
 # Database Configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///Pregnify.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
-migrate = Migrate(app, db)  # Initialize Flask-Migrate for database migrations
+migrate = Migrate(app, db)  
 
 @app.route('/')
 def home():

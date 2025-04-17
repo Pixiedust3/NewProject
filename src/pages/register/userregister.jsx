@@ -31,9 +31,9 @@ const Registerlogin = () => {
       }
 
       const data = await res.json();
-      setMessage(`✅ ${data.message}`); // e.g., "User registered successfully"
+      setMessage(`✅ ${data.message}`);
     } catch (err) {
-      // Log the full error to the console
+    
       console.error('Network or Unexpected Error:', err);
       setMessage("⚠️ Network error or server is unreachable.");
     }

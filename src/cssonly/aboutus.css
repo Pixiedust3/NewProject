@@ -1,50 +1,50 @@
-/* General container styling */
+
 .about-container {
-    background: linear-gradient(to right, #4A90E2, #89CFF0); /* Gradient background */
-    padding: 40px 20px; /* Adjusted padding for better spacing */
-    color: rgb(13, 51, 223); /* Text color */
-    text-align: center; /* Center-align text */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background: linear-gradient(to right, #4A90E2, #89CFF0); 
+    padding: 40px 20px; 
+    color: rgb(13, 51, 223); 
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Header section styling */
 .about-header {
     display: flex;
-    justify-content: space-around; /* Space items evenly */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    margin-bottom: 40px; /* Spacing below the header */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-bottom: 40px; /
 }
 
-/* Individual section styling */
+
 .about-section {
-    width: 22%; /* Fixed width for each section */
-    text-align: center; /* Center-align content */
-    margin: 10px 0; /* Spacing between sections */
+    width: 22%; 
+    text-align: center; 
+    margin: 10px 0; 
 }
 
-/* Icon styling */
+
 .icon {
-    font-size: 40px; /* Icon size */
-    margin-bottom: 10px; /* Spacing below the icon */
-    color: rgb(3, 43, 173); /* Icon color */
+    font-size: 40px; 
+    margin-bottom: 10px; 
+    color: rgb(3, 43, 173); 
 }
 
-/* Heading styling */
+
 h3 {
-    font-size: 18px; /* Heading size */
-    margin-bottom: 10px; /* Spacing below the heading */
-    font-weight: 600; /* Bold heading */
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    font-weight: 600; 
 }
 
-/* Paragraph styling */
+
 p {
-    font-size: 14px; /* Text size */
-    line-height: 1.6; /* Improved line spacing for readability */
-    margin: 0; /* Remove default margin */
+    font-size: 14px; 
+    line-height: 1.6; 
+    margin: 0; 
 }
 
-/* Services section styling */
+
 .about-services {
     display: flex;
     justify-content: space-around; /* Space items evenly */

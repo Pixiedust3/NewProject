@@ -18,14 +18,14 @@ function Page() {
   };
 
   const navigateToRegisterLogin = () => {
-    navigate("/userregister");  // ✅ Route to RegisterLogin page
+    navigate("/userregister");  
   };
 
   return (
     <div className="page-container">
       {/* Hero Section */}
       <header className="hero-section">
-        <h1 className="page-title">Welcome to Pregnify</h1>
+        <h1 className="page-title">Welcome to Pregnify, Your Pregnancy Companion</h1>
         <p className="page-description">
           <b>Your Health is Our Top Priority</b>
         </p>
@@ -48,7 +48,7 @@ function Page() {
             </button>
             <button className="club-button" onClick={navigateToRegisterLogin}>
               Test
-            </button> {/* ✅ Now correctly routes to RegisterLogin */}
+            </button>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ const Top = () => {
       <nav className="navbar">
         <ul className="navbar-links">
           <li><Link to="/pregnancy">Pregnancy</Link></li>
-          <li><Link to="/baby">Baby</Link></li>
+          <li><Link to="/baby">Baby</Link></li> {/* Baby section routed separately */}
           <li><Link to="/parenting">Parenting</Link></li>
           <li><Link to="/doctor">Doctor</Link></li>
           <li><Link to="/about">About Us</Link></li>

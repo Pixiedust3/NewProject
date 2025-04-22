@@ -7,7 +7,8 @@ import DoctorModule from "./pages/doctorlogin";
 import Resources from "./pages/resources";
 import Registerlogin from "./pages/register/userregister"; 
 import Parenting from "./pages/parenting";  
-
+import BabySection from "./pages/BabySection";
+import Preg from "./pages/preg"
 import './App.css';
 
 const App = () => {
@@ -20,10 +21,10 @@ const App = () => {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/doctorlogin" element={<DoctorModule />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/userregister" element={<Registerlogin />} /> {/* ✅ Route now works */}
+        <Route path="/userregister" element={<Registerlogin />} /> 
         <Route path="/parenting" element={<Parenting />} />
-
-
+        <Route path="/baby" element={<BabySection />} />
+        <Route path="/pregnancy" element={<Preg />} />
       </Routes>
     </Router>
   );

@@ -1,80 +1,88 @@
-/* src/cssonly/userhome.css */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
+/* Full page split layout */
+.layout-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
 }
 
-.page-container {
-  text-align: center;
-  padding: 2rem;
+.sidebar {
+  width: 50%; /* Sidebar takes half of the page */
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-right: 1px solid #ddd;
 }
 
-.hero-section {
-  background-color: #ffebcd;
-  padding: 2rem 0;
+.sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4a4a4a;
 }
 
-.page-title {
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.page-description {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.page-sections {
-  padding: 3rem 0;
-  background-color: #fff;
-}
-
-.section-card {
-  background-color: #e7f7f7;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-top: 2rem;
-}
-
-.section-title {
-  font-size: 2rem;
-}
-
-.club-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: 10px;
-}
-
-.club-button:hover {
-  background-color: #45a049;
-}
-
-.navbar {
-  background-color: #333;
-  padding: 1rem;
-}
-
-.navbar-links {
+.sidebar-links {
   list-style: none;
   padding: 0;
 }
 
-.navbar-links li {
-  display: inline;
-  margin: 0 20px;
+.sidebar-links li {
+  margin: 12px 0;
 }
 
-.navbar-links a {
-  color: white;
+.sidebar-links a {
   text-decoration: none;
-  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.sidebar-links a:hover {
+  color: #007bff;
+}
+
+.page-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #fff;
+  width: 50%; /* Content takes the other half of the page */
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-size: 32px;
+  color: #222;
+}
+
+.page-description {
+  font-size: 18px;
+  color: #555;
+}
+
+.section-card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.club-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.club-button:hover {
+  background-color: #0056b3;
 }

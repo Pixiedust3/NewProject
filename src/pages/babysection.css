@@ -10,13 +10,13 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ff6fb3; /* soft pink */
+    color: #ff6fb3; 
   }
   
   .baby-subtext {
     text-align: center;
     font-size: 1.2rem;
-    color: #6c63ff; /* bluish accent */
+    color: #6c63ff; 
     margin-bottom: 30px;
   }
   
@@ -60,4 +60,5 @@
     font-size: 1.05rem;
     color: #555;
   }
+  
   

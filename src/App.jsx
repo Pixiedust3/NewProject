@@ -8,6 +8,7 @@ import Resources from "./pages/resources";
 import Registerlogin from "./pages/register/userregister"; 
 import Parenting from "./pages/parenting";  
 import BabySection from "./pages/BabySection";
+import Nutrition from "./pages/NutritionSection";
 import Preg from "./pages/preg"
 import './App.css';
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/parenting" element={<Parenting />} />
         <Route path="/baby" element={<BabySection />} />
         <Route path="/pregnancy" element={<Preg />} />
+        <Route path="/nutrition" element={<Nutrition />} />
       </Routes>
     </Router>
   );

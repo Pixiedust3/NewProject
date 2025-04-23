@@ -16,6 +16,9 @@ function Page() {
   const navigateToRes = () => {
     navigate("/resources");
   };
+  const navigateToNuti = () => {
+    navigate("/nutrition");
+  };
 
   const navigateToRegisterLogin = () => {
     navigate("/userregister");  
@@ -67,6 +70,7 @@ const Top = () => {
           <li><Link to="/doctor">Doctor</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/resources">Resources</Link></li>
+          <li><Link to="/nutrition">Nutrition</Link></li>
         </ul>
         <div className="navbar-icons"></div>
       </nav>
